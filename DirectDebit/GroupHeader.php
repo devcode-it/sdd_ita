@@ -83,7 +83,7 @@ class GroupHeader
    * @param bool $initiatingPartyName
    * @param null $creationdateTime
    */
-  function __construct($messageIdentification = false, $initiatingPartyName = false)
+  public function __construct($messageIdentification = false, $initiatingPartyName = false)
   {
     $this->messageIdentification = $messageIdentification;
     $this->initiatingPartyName = $initiatingPartyName;
