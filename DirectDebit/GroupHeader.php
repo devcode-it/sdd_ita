@@ -22,10 +22,10 @@ namespace Sdd\DirectDebit;
    * Class GroupHeader
    * @package Sdd\DirectDebit
    */
-/**
- * Class GroupHeader
- * @package Sdd\DirectDebit
- */
+  /**
+   * Class GroupHeader
+   * @package Sdd\DirectDebit
+   */
 /**
  * Class GroupHeader
  * @package Sdd\DirectDebit
@@ -66,7 +66,6 @@ class GroupHeader
   protected $creationDateTime;
 
 
-
   /**
    * @var
    */
@@ -88,6 +87,7 @@ class GroupHeader
   {
     $this->messageIdentification = $messageIdentification;
     $this->initiatingPartyName = $initiatingPartyName;
+    $this->creationDateTime = new \DateTime();
 
   }
 
@@ -107,15 +107,6 @@ class GroupHeader
     return $this->creationDateTime;
   }
 
-
-
-  /**
-   * @param \DateTime $creationDateTime
-   */
-  public function setCreationDateTime($creationDateTime)
-  {
-    $this->creationDateTime = $creationDateTime;
-  }
 
   /**
    * @return string
