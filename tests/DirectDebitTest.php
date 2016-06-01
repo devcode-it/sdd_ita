@@ -1,5 +1,7 @@
 <?php
 
+use PHPUnit_Framework_TestCase;
+use Sdd\DirectDebit\GroupHeader;
 use Sdd\DirectDebit\Payment;
 use Sdd\DirectDebit\PaymentInformation;
 
@@ -8,7 +10,7 @@ date_default_timezone_set('Europe/Rome');
 /**
  * Class DirectDebit
  */
-class DirectDebit extends \PHPUnit_Framework_TestCase
+class DirectDebit extends PHPUnit_Framework_TestCase
 {
 
   /**
