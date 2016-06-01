@@ -26,6 +26,10 @@ namespace Sdd\DirectDebit;
  * Class GroupHeader
  * @package Sdd\DirectDebit
  */
+/**
+ * Class GroupHeader
+ * @package Sdd\DirectDebit
+ */
 class GroupHeader
 {
 

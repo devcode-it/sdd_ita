@@ -19,6 +19,7 @@ class DirectDebit extends PHPUnit_Framework_TestCase
   public function testCreateTransfer()
   {
     $directDebit = new \Sdd\DirectDebit();
+
     //group header
     $groupHeader = new GroupHeader();
 
@@ -27,8 +28,8 @@ class DirectDebit extends PHPUnit_Framework_TestCase
       ->setOrgHeaderId('ABC')// Codice Unico CBI
       ->setOrgHeaderIssr('CBI')
       ->setMessageIdentification(1)
-      ->setNumberOfTransactions(2)
-      ->setControlSum('');
+      ->setNumberOfTransactions(2);
+
     $directDebit->setGroupHeader($groupHeader);
 
 
@@ -45,7 +46,7 @@ class DirectDebit extends PHPUnit_Framework_TestCase
       ->setRequestedExecutionDate('2016-05-01')
       ->setLocalMethod("B2B")
       ->setServiceLevel('SEPA')
-      ->setSeqType("RCURR");
+      ->setSeqType("RCUR");
 
 
     $payment = new Payment;
