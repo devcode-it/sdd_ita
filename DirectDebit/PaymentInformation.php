@@ -232,7 +232,7 @@ class PaymentInformation
   /**
    * @return boolean
    */
-  public function getBtchBookg()
+  public function hasBtchBookg()
   {
     return json_encode($this->btchBookg);
   }

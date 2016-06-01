@@ -87,7 +87,7 @@ class DirectDebit extends Base
       $paymentMethod = $this->createElement('PmtMtd', $paymentInformation->getPaymentMethod());
       $this->payment->appendChild($paymentMethod);
 
-      $paymentMethod = $this->createElement('BtchBookg', $paymentInformation->getBtchBookg());
+      $paymentMethod = $this->createElement('BtchBookg', $paymentInformation->hasBtchBookg());
       $this->payment->appendChild($paymentMethod);
 
       /* payment base data */
