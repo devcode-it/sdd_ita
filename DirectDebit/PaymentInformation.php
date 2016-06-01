@@ -246,13 +246,14 @@ class PaymentInformation
   {
     if (is_array($payment)) {
       foreach ($payment as $transfer) {
-
         $this->payments[] = $transfer;
       }
-    } else {
 
-      $this->payments[] = $payment;
+      return;
     }
+
+    $this->payments[] = $payment;
+
   }
 
 
