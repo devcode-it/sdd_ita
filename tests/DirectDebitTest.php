@@ -22,6 +22,7 @@ class DirectDebit extends PHPUnit_Framework_TestCase
 
     //group header
     $groupHeader = new GroupHeader();
+    $groupHeader->setCreationDateTime(\Carbon\Carbon::now());
 
     $groupHeader->setControlSum(400)
       ->setInitiatingPartyName('AZIENDA S.P.A.')

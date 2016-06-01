@@ -74,10 +74,10 @@ class Base
    */
   protected function IBAN($IBAN)
   {
-    $id = $this->createElement('Id');
-    $id->appendChild($this->createElement('IBAN', $IBAN));
+    $ibanElement = $this->createElement('Id');
+    $ibanElement->appendChild($this->createElement('IBAN', $IBAN));
 
-    return $id;
+    return $ibanElement;
   }
 
   /**
