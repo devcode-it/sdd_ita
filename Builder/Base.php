@@ -49,9 +49,9 @@ class Base
       $elm->appendChild($this->dom->createTextNode($value));
 
       return $elm;
-    } else {
-      return $this->dom->createElement($name);
     }
+
+    return $this->dom->createElement($name);
   }
 
   /**
