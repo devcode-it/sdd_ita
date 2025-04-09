@@ -1,5 +1,5 @@
 {
-  "name": "wdog/sdd_ita",
+  "name": "devcode-it/sdd_ita",
   "type": "library",
   "description": "Creates an XML file for a Single Euro Payments Area (SEPA) Direct Debit.",
   "keywords": ["banking", "sepa", "xml", "SDD"],
@@ -7,6 +7,10 @@
   "authors": [
     {
       "name": "Carlo Chech"
+    },
+    {
+      "name": "DevCode s.r.l.",
+      "email": "info@openstamanager.com"
     }
   ],
   "autoload": {
@@ -15,6 +19,6 @@
     }
   },
   "require": {
-    "php": ">=5.4"
+    "php": ">=5.6"
   }
 }
