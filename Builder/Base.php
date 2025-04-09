@@ -9,12 +9,14 @@
 
 namespace Sdd\Builder;
 
+use \AllowDynamicProperties;
 
 /**
  * Class Base
  * @package Sdd\Builder
  */
-class Base
+#[AllowDynamicProperties]
+ class Base
 {
 
 
