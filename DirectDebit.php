@@ -61,7 +61,7 @@ class DirectDebit
    *
    * @return boolean
    */
-  public function validate($xml, $painformat = 'CBISDDReqLogMsg.00.01.00')
+  public function validate($xml, $painformat = 'CBISDDReqLogMsg.00.01.01')
   {
     $reader = new \DOMDocument;
     $reader->loadXML($xml);

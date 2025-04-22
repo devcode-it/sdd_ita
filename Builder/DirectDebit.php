@@ -22,7 +22,7 @@ class DirectDebit extends Base
   /**
    * @param string $painFormat
    */
-  public function __construct($painFormat = 'CBISDDReqLogMsg.00.01.00')
+  public function __construct($painFormat = 'CBISDDReqLogMsg.00.01.01')
   {
     parent::__construct($painFormat);
     //$this->transfer = $this->createElement('XXX');
